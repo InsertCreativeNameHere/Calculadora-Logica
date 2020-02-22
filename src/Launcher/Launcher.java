@@ -16,12 +16,21 @@ public class Launcher {
 
     private static void imprimir(int[] a) {
         for(int i = 0;i <a.length ; i++){
+            if(a[i] == ' ')
+                continue;
             System.out.println(a[i]);
         }
         System.out.println("");
     }
 
-    
+    private static void imprimir(char[] a) {
+        for(int i = 0;i <a.length ; i++){
+            if(a[i] == ' ')
+                continue;
+            System.out.println(a[i]);
+        }
+        System.out.println("");
+    }
      
     public static void main(String[] args) {
         Calculadora l = new Calculadora();
